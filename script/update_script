@@ -1,0 +1,1 @@
+curl -X PUT -H "Content-Type: application/json" -d '{"nama": "John Doe", "alamat": "jalan gagak no.3"}' http://localhost:3000/api/mytable/1

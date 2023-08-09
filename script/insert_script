@@ -1,0 +1,1 @@
+ curl --header "Content-Type: application/json"   --request POST   --data '{"nama":"dadang","alamat":"jalan mangga no.1"}'   http://localhost:3000/api/mytable
