@@ -18,3 +18,6 @@ To explore how to use Rust, Axum Web Framework, SQLX, and MySQL to build a simpl
     - Perform the UPDATE Operation of CRUD
     - Perform the READ Operation of CRUD
     - Perform the DELETE Operation of CRUD
+- How to run
+    - Run sql script to create database and table in your query terminal
+    - Run the code by using "cargo run"
