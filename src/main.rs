@@ -74,10 +74,8 @@ async fn get_mytable (State(pool):State<MySqlPool>, Path(nomer): Path<i64>)
 
 async fn create_mytable( State(pool):State<MySqlPool>, Json(my_table):Json<MyTableInsert>) 
     -> Result<Json<Value>, (StatusCode, String)> {
-   // let string_query = "INSERT INTO mytable (nomer,nama,alamat) VALUES ($1, $2)";
     let string_query = "INSERT INTO mytable (nama,alamat) VALUES (?, ?)";
     let _result = sqlx::query(string_query)
-    //.bind(&my_table.nomer)
         .bind(&my_table.nama.to_string())
         .bind(&my_table.alamat.to_string())
         .execute(&pool)
